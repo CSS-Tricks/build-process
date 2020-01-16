@@ -1,5 +1,5 @@
 /* purgecss start ignore */
-@tailwind  base;
+@tailwind base;
 /* purgecss end ignore */
 
 /*
@@ -9,7 +9,7 @@ section {
   @apply pb-10;
   @apply px-4;
 }
-p+p {
+p + p {
   @apply mt-4;
 }
 
@@ -37,8 +37,8 @@ a {
 }
 a:hover,
 a:focus {
- @apply border-b-2;
- @apply border-teal-200;
+  @apply border-b-2;
+  @apply border-teal-200;
 }
 a.naked-link:link,
 a.naked-link:visited {
@@ -83,7 +83,6 @@ code {
   @apply border-b-0;
 }
 
-
 .filter-bw-800 {
   filter: grayscale(0.8);
 }
@@ -96,7 +95,7 @@ code {
 }
 
 /* purgecss start ignore */
-@tailwind  components;
+@tailwind components;
 /* purgecss end ignore */
 
 @tailwind utilities;

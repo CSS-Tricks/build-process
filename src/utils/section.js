@@ -1,4 +1,3 @@
-
 /**
  * Split the content into excerpt and remainder
  *
@@ -13,11 +12,10 @@ module.exports = function(str, section) {
   var content = new String(str);
   var delimit = "\n<!--more-->\n";
   var parts = content.split(delimit);
-  var which = section == 'remainder' ? 1 : 0;
-  if(parts.length) {
+  var which = section == "remainder" ? 1 : 0;
+  if (parts.length) {
     return parts[which];
   } else {
-    return str
+    return str;
   }
-}
-
+};
