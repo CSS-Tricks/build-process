@@ -4,26 +4,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900|PT+Serif:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
   <title>{{ title }}</title>
 </head>
 
-<body class="container mx-auto mb-12 lg:max-w-4xl text-gray-700">
-
-  {% include "./header.njk" %}
+<body>
   
-  <div class="content leading-relaxed">
-    {{ content | safe }}
-  </div>
+  {{ content | safe }}
   
   {% set js %}
-    {% include "js/core.js" %}
-    {% include "js/hello.js" %}
+    {% include "js/main.js" %}
   {% endset %}
   
   <script>{{ js | jsmin | safe }}</script>
   
 </body>
+
 </html>
 
 

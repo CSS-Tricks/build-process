@@ -3,91 +3,27 @@ title: Build Process
 layout: default
 ---
 
-<div class="p-6">
-  <h1 class="text-5xl leading-tight mb-8 leading-none font-serif">
-    This open-source site has a very fancy build process.
+<header class="site-header">
+  <img src="/images/css-tricks.svg" alt="Presented by CSS-Tricks">
+
+  <h1>
+    Build<br>Process
   </h1>
-  <p>The point of which is to be a reference for your own build process.</p>
   
-  <div class="">
-    <h2 class="text-2xl">
-      1) It processes CSS, keeping only authored CSS in the repo.
-    </h2>
-    <p>
-      Commits with processed code are janky.
-    </p>
-  </div>
-  
-  <div class="">
-    <h2 class="text-2xl">
-      2) It processes JavaScript, keeping only authored JavaScript in the repo.
-    </h2>
-    <p>
-      Commits with processed code are janky.
-    </p>
-  </div>
-  
-  <div class="">
-    <h2 class="text-2xl">
-      3) It builds a sitemap
-    </h2>
-    <p>
-      
-    </p>
-  </div>
-  
-  <div class="">
-    <h2 class="text-2xl">
-      4) It optimizes all images
-    </h2>
-    <p>
-      Including SVG
-    </p>
-  </div>
-  
-  <div class="">
-    <h2 class="text-2xl">
-      4) It checks for broken links
-    </h2>
-    <p>
-      Is that weird?
-    </p>
-  </div>
-  
-  <div class="">
-    <h2 class="text-2xl">
-      4) It runs unit tests
-    </h2>
-    <p>
-      On the JavaScript
-    </p>
-  </div>
-  
-  <div class="">
-    <h2 class="text-2xl">
-      4) It runs end-to-end tests
-    </h2>
-    <p>
-      With something like Cypress
-    </p>
-  </div>
-  
-  <div class="">
-    <h2 class="text-2xl">
-      4) It runs visual regression tests
-    </h2>
-    <p>
-      With something like Percy
-    </p>
-  </div>
-  
-  <div class="">
-    <h2 class="text-2xl">
-      4) It sends Slack notifications
-    </h2>
-    <p>
-      About succesful and failed builds
-    </p>
-  </div>
-  
-</div>
+  <p class="intro-p">This site is about all the things you can and often should do with a build process on a site. That is, your local build process, but more importantly the build process that runs after you commit your code. They need to work in unison so that your repo is clear of files that don’t need to be there and you’re making computers help you do rote tasks for you and protect you from yourself.</p>
+
+  <a class="button repo-button" href="https://github.com/CSS-Tricks/build-process">Repo on GitHub</a>
+</header>
+
+<main>
+  {%- for process in collections.processes -%}
+  <section class="process">
+    <div>
+      <h2>
+        {{ process.data.title }}
+      </h2>
+      {{ process.templateContent | safe }}
+    </div>
+  </section>
+  {%- endfor -%}
+</main>
