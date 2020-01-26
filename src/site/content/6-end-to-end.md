@@ -7,8 +7,9 @@ Make sure your website is doing all the important things it should be doing. End
 ### Principals
 
 - Run your end-to-end tests on every commit
+- Notifications for failures
 
 ### Relevant Tools
 
-- Cypress
-- jest-puppeteer
+- Testing frameworks: [Cypress](https://www.cypress.io/), [jest-puppeteer](https://github.com/smooth-code/jest-puppeteer), [WebdriverIO](https://webdriver.io/), [TestCafe](https://github.com/DevExpress/testcafe), [Nightwatch.js](https://nightwatchjs.org/)
+- Browser automation: [Puppeteer](https://github.com/puppeteer/puppeteer), [Selenium](https://selenium.dev/), [Playwright](https://github.com/microsoft/playwright), [SlimerJS](https://slimerjs.org/)

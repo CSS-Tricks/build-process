@@ -6,8 +6,8 @@ It's likely you'll need some kind of HTML processing to turn templates, layouts,
 
 ### Principles
 
-- Commit only authored files in the repo
-- Minify production HTML
+- Commit only authored files to the repo
+- Minify production code
 
 ### Relevant Tools
 

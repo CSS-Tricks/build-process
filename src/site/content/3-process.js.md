@@ -6,13 +6,16 @@ You may want to preprocess your JavaScript, allowing for use of modern features 
 
 ### Principals
 
-- Only commit authored files to Repo
-- Sourcemaps
-- Concatenate & minify production JavaScript
-- Code splitting & tree shaking
+- Only commit authored files to repo
+- Concatenate & minify production code
+- Create sourcemaps
+- Code splitting (only load what is needed at the time)
+- Tree shaking (remove unused code)
 
 ### Relevant Tools
 
-- Babel
+- Linting: [ESLint](https://eslint.org/)
+- Code Formatting: [Prettier](https://prettier.io/)
+- Preprocessor: [Babel](https://babeljs.io/)
 - Bundlers like [Rollup](https://github.com/rollup/rollup), [Parcel](https://parceljs.org/), and [webpack](https://webpack.js.org/).
-- Post-install one-time package usage with [Snowpack](https://www.snowpack.dev/).
+- Post-install [Snowpack](https://www.snowpack.dev/).

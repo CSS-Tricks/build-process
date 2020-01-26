@@ -6,8 +6,10 @@ Make sure your website doesn't regress in performance by testing all changes aga
 
 ### Principals
 
-- Run your performance tests on every commit.
+- Run your performance tests on every commit
+- Notifications for exceeding budget
 
 ### Relevant Tools
 
-- Hosted services like [SpeedCurve](https://speedcurve.com/) ([CLI](https://github.com/SpeedCurve-Metrics/speedcurve-cli)) and [Calibre](https://calibreapp.com/) ([CLI](https://calibreapp.com/cli))
+- Hosted services: [SpeedCurve](https://speedcurve.com/) ([CLI](https://github.com/SpeedCurve-Metrics/speedcurve-cli)) and [Calibre](https://calibreapp.com/) ([CLI](https://calibreapp.com/cli))
+- Frameworks: [Build Tracker](https://buildtracker.dev/)
