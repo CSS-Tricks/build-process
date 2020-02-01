@@ -13,6 +13,7 @@ dev:
   NODE_ENV: development
 
 plugins:
-  - package: "@netlify/plugin-sitemap"
-    config:
-      buildDir: dist
+  # - package: "@netlify/plugin-sitemap"
+  #   config:
+  #     buildDir: dist
+  - type: ./plugins/doThing
