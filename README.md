@@ -2,7 +2,7 @@
 
 This is just the start of a little microsite idea I wanna do in 2020. 
 
-I cloned this intial project from Phil's [ElevenTail](https://eleventail.netlify.com/about/) to give me a starter kit.
+I cloned this initial project from Phil's [ElevenTail](https://eleventail.netlify.com/about/) to give me a starter kit.
 
 
 ## Prerequisites
